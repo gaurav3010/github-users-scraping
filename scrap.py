@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-user_name = 'gaurav3010'
+user = input('Enter User name : ')
+user_name = user
 github_url = 'https://github.com/'
 user_url = github_url + user_name
 source = requests.get(user_url).text
