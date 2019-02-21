@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scrap</title>
+    </head>
+    <body>
+        <h1>{{ name }}</h1>
+        <h1>{{ username }}</h1>
+        <img src="{{ img_url }}" alt="nothing">
+
+        {% for repo, repo_link in repo_dict.items %}
+            <p>{{ repo }} : {{ repo_link }}</p>
+        {% endfor %}
+    </body>
+</html>

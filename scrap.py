@@ -28,12 +28,12 @@ img_url_source = soup.find('a', class_ = 'u-photo')
 img_url = img_url_source.img['src']
 print(img_url,"")
 
-
 # repo
-for list_all in soup.find_all('li', class_ = 'pinned-repo-item'):
+for list_all in soup.find_all('li', class_ = 'pinned-item-list-item'):
     repo = list_all.span.span.a.span.text
     print('Repo name : ', repo)
 
+    print("Reaching")
     # repo link
     repo_link = list_all.span.span.a['href']
     print('Repo link : ' ,repo_link)
